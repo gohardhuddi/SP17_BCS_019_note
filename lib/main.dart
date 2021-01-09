@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tizeno/screens/main_page.dart';
 import 'package:flutter/rendering.dart';
+import 'splashscreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
       ),
       home: ScrollConfiguration(
         behavior: MyBehavior(),
-        child: MainPage(),
+        child:splashscreen(),
+        //MainPage(),
       ),
     );
   }
