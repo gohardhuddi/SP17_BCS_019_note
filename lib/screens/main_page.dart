@@ -381,20 +381,33 @@ class _MainPageState extends State<MainPage> {
     return [
       Padding(
           padding: EdgeInsets.symmetric(horizontal: 12),
-          child: IconButton(
-            color: Colors.white,
-            icon: notesViewType == viewType.List
-                ? FaIcon(
-                    LineAwesomeIcons.copy,
-                    size: 30,
-                    color: Colors.white,
-                  )
-                : FaIcon(
-                    LineAwesomeIcons.list,
-                    size: 30,
-                    color: Colors.white,
-                  ),
-            onPressed: () => _toggleViewType(),
+          child: Row(
+            children: [
+              IconButton(
+                color: Colors.white,
+                icon: notesViewType == viewType.List
+                    ? FaIcon(
+                  LineAwesomeIcons.copy,
+                  size: 30,
+                  color: Colors.white,
+                )
+                    : FaIcon(
+                  LineAwesomeIcons.list,
+                  size: 30,
+                  color: Colors.white,
+                ),
+                onPressed: () => _toggleViewType(),
+              ),
+          IconButton(
+            icon: Icon(
+              Icons.search,
+              color: Colors.white,
+            ),
+            onPressed: () {
+              // do something
+            },
+          ),
+            ],
           )
           // InkWell(
           //   child: GestureDetector(

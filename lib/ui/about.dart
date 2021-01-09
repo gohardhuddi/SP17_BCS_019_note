@@ -66,7 +66,7 @@ class AboutDialog extends StatelessWidget {
                         ),
                       ),
                       child: CircleAvatar(
-                        backgroundImage: AssetImage("assets/images/dev.png"),
+                        backgroundImage: AssetImage("images/profileimage.jpg"),
                       )),
                   title: Text(
                     "Khurram Shahzad",
