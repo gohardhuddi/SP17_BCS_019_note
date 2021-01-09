@@ -66,7 +66,7 @@ class _MoreOptionsSheetState extends State<MoreOptionsSheet> {
               }),
           new ListTile(
               leading: new Icon(Icons.share),
-              title: new Text('Share'),
+              title: new Text('Share with Friends'),
               onTap: () {
                 Navigator.of(context).pop();
                 widget.callBackOptionTapped(moreOptions.share);
